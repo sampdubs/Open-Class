@@ -107,6 +107,8 @@ fastlane/test_output
 iOSInjectionProject/
 
 ### PYTHON ###
+links
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -125,6 +127,7 @@ eggs/
 lib/
 lib64/
 parts/
+sdist/
 sdist/
 var/
 wheels/
