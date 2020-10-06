@@ -1,3 +1,5 @@
+.vscode/
+
 ### ANDROID ###
 *.iml
 .gradle

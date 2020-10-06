@@ -24,15 +24,14 @@
 
 /* Begin PBXFileReference section */
 		C41BDDF824FE8F99009D3437 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		C4B3DCBC24F68DC20073DC83 /* Open Class - Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open Class - Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B3DCBC24F68DC20073DC83 /* Zoom to Class.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zoom to Class.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B3DCBF24F68DC20073DC83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4B3DCC124F68DC20073DC83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C4B3DCC324F68DC50073DC83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4B3DCC624F68DC50073DC83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4B3DCC924F68DC50073DC83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4B3DCCB24F68DC50073DC83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4B3DCCC24F68DC50073DC83 /* Open_Class.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Open_Class.entitlements; sourceTree = "<group>"; };
-		C4CB7EA124FFE3E200C86FC1 /* Open Class.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open Class.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4CB7EA124FFE3E200C86FC1 /* Zoom to Class.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zoom to Class.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CB7EA324FFE3E200C86FC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4CB7EA524FFE3E200C86FC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C4CB7EA724FFE3E200C86FC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,8 +72,8 @@
 		C4B3DCBD24F68DC20073DC83 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4B3DCBC24F68DC20073DC83 /* Open Class - Mac.app */,
-				C4CB7EA124FFE3E200C86FC1 /* Open Class.app */,
+				C4B3DCBC24F68DC20073DC83 /* Zoom to Class.app */,
+				C4CB7EA124FFE3E200C86FC1 /* Zoom to Class.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,7 +87,6 @@
 				C4B3DCC324F68DC50073DC83 /* Assets.xcassets */,
 				C4B3DCC824F68DC50073DC83 /* Main.storyboard */,
 				C4B3DCCB24F68DC50073DC83 /* Info.plist */,
-				C4B3DCCC24F68DC50073DC83 /* Open_Class.entitlements */,
 				C4B3DCC524F68DC50073DC83 /* Preview Content */,
 			);
 			path = "Open Class - Mac";
@@ -142,7 +140,7 @@
 			);
 			name = "Open Class - Mac";
 			productName = "Open Class";
-			productReference = C4B3DCBC24F68DC20073DC83 /* Open Class - Mac.app */;
+			productReference = C4B3DCBC24F68DC20073DC83 /* Zoom to Class.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C4CB7EA024FFE3E200C86FC1 /* Open Class - iOS */ = {
@@ -159,7 +157,7 @@
 			);
 			name = "Open Class - iOS";
 			productName = "Open Class - iOS";
-			productReference = C4CB7EA124FFE3E200C86FC1 /* Open Class.app */;
+			productReference = C4CB7EA124FFE3E200C86FC1 /* Zoom to Class.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -383,11 +381,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Open Class/Open_Class.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Open Class - Mac/Open_Class.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_ASSET_PATHS = "\"Open Class/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_ASSET_PATHS = "\"Open Class - Mac/Preview Content\"";
 				DEVELOPMENT_TEAM = 93VRS9H83W;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -398,8 +396,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 2.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.project.Open-Class-Mac";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sampw.openclass;
+				PRODUCT_NAME = "Zoom to Class";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -408,11 +406,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Open Class/Open_Class.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Open Class - Mac/Open_Class.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_ASSET_PATHS = "\"Open Class/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_ASSET_PATHS = "\"Open Class - Mac/Preview Content\"";
 				DEVELOPMENT_TEAM = 93VRS9H83W;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -423,8 +421,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 2.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.project.Open-Class-Mac";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sampw.openclass;
+				PRODUCT_NAME = "Zoom to Class";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -434,7 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Open Class - iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = 93VRS9H83W;
 				ENABLE_PREVIEWS = YES;
@@ -445,8 +443,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.project.Open-Class-iOS";
-				PRODUCT_NAME = "Open Class";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sampw.openclass;
+				PRODUCT_NAME = "Zoom to Class";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,7 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Open Class - iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = 93VRS9H83W;
 				ENABLE_PREVIEWS = YES;
@@ -469,8 +467,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.project.Open-Class-iOS";
-				PRODUCT_NAME = "Open Class";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sampw.openclass;
+				PRODUCT_NAME = "Zoom to Class";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -30,7 +30,7 @@ struct Settings: View {
     func makeNameBinding(_ i: Int) -> Binding<String>{
         return Binding<String> (
             get: {
-                return (UserDefaults.standard.array(forKey: "classNames") as? [String] ??Array(repeating: "Class name not set", count: 5))[i]
+                return (UserDefaults.standard.array(forKey: "classNames") as? [String] ?? Array(repeating: "Class name not set", count: 5))[i]
         },
             set: { toSet in
                 var current = UserDefaults.standard.array(forKey: "classNames") as? [String] ?? Array(repeating: "Class name not set", count: 5)
