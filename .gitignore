@@ -1,6 +1,7 @@
 .vscode/
 *.pfx
 *.p12
+*.cer
 secret.json
 cache/
 
