@@ -2,6 +2,7 @@
 *.pfx
 *.p12
 secret.json
+cache/
 
 ### ANDROID ###
 *.iml
