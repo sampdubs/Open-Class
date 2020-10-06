@@ -1,4 +1,7 @@
 .vscode/
+*.pfx
+*.p12
+secret.json
 
 ### ANDROID ###
 *.iml
