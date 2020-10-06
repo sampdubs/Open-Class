@@ -4,9 +4,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 
-import sys
-import webbrowser
-import shelve
+import sys, webbrowser, shelve, os
 from datetime import datetime
 
 class MainWindow(QWidget):
@@ -14,6 +12,17 @@ class MainWindow(QWidget):
         super().__init__()
 
         self.TIMES = [(8, 30), (8, 50), (10, 15), (12, 10), (13, 35)]
+        
+        path = ""
+        if os.name == "nt":
+            path = os.getenv('APPDATA')
+            path = os.path.join(path, "ZoomToClass")
+        else:
+            path = os.path.expanduser("~/.ZoomToClass")
+        if not os.path.exists(path):
+            os.mkdir(path)
+        self.path = os.path.join(path, "links")
+        print(self.path)
 
         self.layout = QGridLayout()
         self.setGeometry(100, 100, 600, 400)
@@ -22,7 +31,7 @@ class MainWindow(QWidget):
 
     def makeMainUI(self):
         self.clearLayout(self.layout)
-        db = shelve.open("links")
+        db = shelve.open(self.path)
         if "links" not in db:
             db["links"] = {t: ("Class name not set", "https://large-type.com/#You%20have%20not%20set%20up%20this%20zoom%20link%20yet") for t in self.TIMES}
         links = db["links"]
@@ -84,7 +93,7 @@ class MainWindow(QWidget):
 
     def makeSettingsUI(self):
         self.clearLayout(self.layout)
-        db = shelve.open("links", writeback=True)
+        db = shelve.open(self.path, writeback=True)
         links = db["links"]
         self.titleBoxes = []
         self.linkBoxes = []
