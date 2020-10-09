@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C41BDDF924FE8F99009D3437 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41BDDF824FE8F99009D3437 /* Settings.swift */; };
+		C463081F2530EDC700B233AA /* meeting.png in Resources */ = {isa = PBXBuildFile; fileRef = C463081E2530EDC700B233AA /* meeting.png */; };
 		C4B3DCC024F68DC20073DC83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B3DCBF24F68DC20073DC83 /* AppDelegate.swift */; };
 		C4B3DCC224F68DC20073DC83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B3DCC124F68DC20073DC83 /* ContentView.swift */; };
 		C4B3DCC424F68DC50073DC83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B3DCC324F68DC50073DC83 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		C41BDDF824FE8F99009D3437 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		C463081E2530EDC700B233AA /* meeting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meeting.png; sourceTree = "<group>"; };
 		C4B3DCBC24F68DC20073DC83 /* Zoom to Class.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zoom to Class.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B3DCBF24F68DC20073DC83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4B3DCC124F68DC20073DC83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				C4CB7EA924FFE3E500C86FC1 /* Assets.xcassets */,
 				C4CB7EAE24FFE3E500C86FC1 /* LaunchScreen.storyboard */,
 				C4CB7EB124FFE3E500C86FC1 /* Info.plist */,
+				C463081E2530EDC700B233AA /* meeting.png */,
 				C4CB7EAB24FFE3E500C86FC1 /* Preview Content */,
 			);
 			path = "Open Class - iOS";
@@ -215,6 +218,7 @@
 				C4CB7EB024FFE3E500C86FC1 /* LaunchScreen.storyboard in Resources */,
 				C4CB7EAD24FFE3E500C86FC1 /* Preview Assets.xcassets in Resources */,
 				C4CB7EAA24FFE3E500C86FC1 /* Assets.xcassets in Resources */,
+				C463081F2530EDC700B233AA /* meeting.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +388,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Open Class - Mac/Open_Class.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Open Class - Mac/Preview Content\"";
 				DEVELOPMENT_TEAM = 93VRS9H83W;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -395,7 +399,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sampw.openclass;
 				PRODUCT_NAME = "Zoom to Class";
 				SWIFT_VERSION = 5.0;
@@ -409,7 +413,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Open Class - Mac/Open_Class.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Open Class - Mac/Preview Content\"";
 				DEVELOPMENT_TEAM = 93VRS9H83W;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -420,7 +424,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sampw.openclass;
 				PRODUCT_NAME = "Zoom to Class";
 				SWIFT_VERSION = 5.0;
@@ -432,7 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Open Class - iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = 93VRS9H83W;
 				ENABLE_PREVIEWS = YES;
@@ -442,7 +446,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sampw.openclass;
 				PRODUCT_NAME = "Zoom to Class";
 				SDKROOT = iphoneos;
@@ -456,7 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Open Class - iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = 93VRS9H83W;
 				ENABLE_PREVIEWS = YES;
@@ -466,7 +470,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sampw.openclass;
 				PRODUCT_NAME = "Zoom to Class";
 				SDKROOT = iphoneos;
