@@ -30,12 +30,6 @@ class MainActivity : AppCompatActivity() {
         return cal.get(Calendar.HOUR_OF_DAY).toString() + ":" + cal.get(Calendar.MINUTE)
     }
 
-//    private fun stringArrToDates(times: String): MutableList<Date> {
-//        var dates = MutableList<Date>(0)
-//        for (t in times) {
-//        }
-//    }
-
     private val classTimes: List<Date> = listOf(
         makeDate(8, 30),
         makeDate(8, 50),
@@ -51,7 +45,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var classLinks: MutableList<String>
 
-//    private lateinit var classTimes: MutableList<Date>
 
     private var linkToOpen = "https://large-type.com/#You%20have%20not%20set%20up%20this%20zoom%20link%20yet"
 
@@ -64,11 +57,7 @@ class MainActivity : AppCompatActivity() {
         )
         classNames =
             preferences.getString(
-                "classNames", JSON
-
-                "Class name not set;;,".repeat(5).substringBeforeLast(
-                    ";;,"
-                )
+                "classNames","Class name not set;;,".repeat(5).substringBeforeLast(";;,")
             )!!.split(";;,").toMutableList()
         classLinks = preferences.getString(
             "classLinks",

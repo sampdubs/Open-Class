@@ -27,7 +27,7 @@ struct ContentView: View {
     
     private func getLink(_ i: Int) -> URL {
         let str = (UserDefaults.standard.array(forKey: "zoomLinks") ?? Array(repeating: "https://large-type.com/#You%20have%20not%20set%20up%20this%20zoom%20link%20yet", count: 5))[i] as? String
-        return URL(string: str ?? "") ?? URL(string: "https://large-type.com/#You%20have%20not%20set%20up%20this%20zoom%20link%20yet")!
+        return URL(string: str?.replacingOccurrences(of: " ", with: "") ?? "") ?? URL(string: "https://large-type.com/#You%20have%20not%20set%20up%20this%20zoom%20link%20yet")!
     }
     
     private func getClass(_ i: Int) -> String {
@@ -82,7 +82,7 @@ struct ContentView: View {
                         self.showAlert = true;
                     }
                 }) {
-                    Text("Open")
+//                    Text("Open")
                 }
             } 
                 Text(update ? " " : "  ")
