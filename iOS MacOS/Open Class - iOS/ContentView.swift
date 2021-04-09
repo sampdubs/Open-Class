@@ -82,7 +82,7 @@ struct ContentView: View {
                         self.showAlert = true;
                     }
                 }) {
-//                    Text("Open")
+                    Text("Open")
                 }
             } 
                 Text(update ? " " : "  ")
